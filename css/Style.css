@@ -1,0 +1,365 @@
+/* limpando todas as formatações  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* Formatação Geral do Site */
+
+/* Corpo/Body */
+body{
+    background: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+
+.Negrito{
+    font-weight:bold;
+}
+
+
+
+/* FORMATAÇÃO DA PARTE INICIAL DO SITE, COMO CABEÇARIO E MENUS */
+/* formatação do Logo do site */
+/* Essa formatação é igual em todas as telas */
+.imagem-logo-principal{
+    text-align: center;
+}
+/* Essa parte muda em cada tela */
+img.logo{
+    width: 50%;
+    height: 50%;
+}
+
+/* formatação do cabeçario/header */
+header{
+    background: rgb(87, 84, 84);
+    padding: 10px;
+}
+
+/* Menu principal */
+nav{
+    margin: 0 auto;
+    width: 85%;
+}
+/* Lista ul */
+nav ul{
+    list-style: none;
+}
+
+
+/* botões da lista do menu */
+nav#botoes-menu-principal a:link{
+    background: rgb(46, 40, 40);
+    border-bottom: 1px solid rgba(68, 68, 68, 0.664) ;
+    border-top: 1px solid rgba(68, 68, 68, 0.664) ;
+    border-radius:300px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+/* Tranforma em botoes aplicaveis */
+a:link, a:active, a:visited{
+    color: rgba(255, 255, 255, 0.692);
+    line-height: 35px;
+    text-decoration: none;
+}
+/* quando parar com o mouse em cima vai aparecer essa cor  */
+nav#botoes-menu-principal a:hover{
+    background: rgba(255, 254, 254, 0.568);
+}
+
+
+
+
+
+
+
+
+
+
+/* FORMATAÇÃO DO CONTEUDO DO SITE COMO PUBLICAÇÃO E ARTIGOS */
+
+/* postagem principal */
+/* Tudo que estiver dentro do main terá essa formatação, lembrando que estamos fazendo o mobile então é em px*/
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(80, 78, 78);
+}
+
+/* edição para todos os titulos dos artigos */
+h1{
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+
+h2{
+    border-bottom: 1px solid white;
+    margin-bottom: 18px;
+    text-align: center;
+    display: block;
+}
+
+h3{
+    border-bottom: 1px solid white;
+    margin-bottom: 16px;
+    margin-top: 40px;
+    text-align: center;
+    display: block;
+}
+
+/* Definir uma classe de artigos */
+article{
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Posição do conteudo e o tanto que ele vai estar relativo */
+.conteudo-principal{
+    text-align: center;
+    text-indent: 1em;
+}
+
+
+/* Edição de todas as imagens que terá no seu trabalho */
+/* NÃO USADO AINDA NESSA PAGINA */
+.imagem{
+    text-align: center;
+}
+
+.imagem img{
+    width: 80%;
+    margin-bottom: 40px;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+/* FORMATAÇÃO DO SEGUNDO CONTAINER */
+/* FORMTAÇÃO DE IMAGEM NÃO USADA AIDA NESSA PAGINA */
+.imagem-segundo-container{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.imagem-segundo-container img{
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+.como-trabalhamos{
+    margin: 0 auto;
+    border-bottom: white 1px solid;
+    width: 60%;
+}
+
+
+
+/* FORMATAÇÃO DO TERCEIRO CONTAINER */
+/* FORMTAÇÃO DE IMAGEM NÃO USADA AIDA NESSA PAGINA */
+.imagem-terceiro-container{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.imagem-terceiro-container img{
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+.metodos-pagamento{
+    margin: 0 auto;
+    border-bottom: white 1px solid;
+    width: 60%;
+}
+
+
+
+
+
+/* RODAPÉ */
+
+footer{
+    border-top: solid 2px rgb(243, 147, 3);
+    margin-top: 50px;
+    color: rgb(104, 104, 104);
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+/* Dispositivos médios como Tablet a partir de 768px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+        /* HEADER/CABEÇARIO */
+
+    /* imagem do logo principal */
+    .imagem-logo-principal{
+        text-align: center;
+    }
+    /* Essa parte muda em cada tela */
+    img.logo{
+        width: 30%;
+    }
+
+
+    nav{
+        margin: 0 auto;
+        width: 90%;
+    }
+    /* Lista ul */
+    nav ul{
+        list-style: none;
+    }
+
+
+    /* botões da lista do menu */
+    nav#botoes-menu-principal a:link{
+        text-align: center;
+        float: left;
+        border-radius:30px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    /* PARTE PRINCIPAL */
+    main{
+        clear: both;
+    }
+
+    .principal{
+        width: 60%;
+        float: left;
+    }
+
+    /* Imagens do site */
+    .imagem{
+        width: 40%;
+    }
+
+
+
+    /* SEGUNDO CONTAINER */
+    .segundo-container{
+        width: 40%;
+        float: right;
+    }
+
+    /* TERCEIRO CONTAINER  */
+    .terceiro-container{
+        clear: both;
+    }
+
+    footer{
+        clear: both;
+    }
+    
+}
+
+
+
+
+
+/* Dispositivos médios como desktop a partir de 992px */
+@media (min-width: 992px) {
+
+
+       /* HEADER/CABEÇARIO */
+
+    /* imagem do logo principal */
+    .imagem-logo-principal{
+        text-align: center;
+    }
+    /* Essa parte muda em cada tela */
+    img.logo{
+        width: 20%;
+    }
+
+
+    nav{
+        margin: 0 auto;
+        width: 90%;
+    }
+    /* Lista ul */
+    nav ul{
+        list-style: none;
+    }
+
+
+    /* botões da lista do menu */
+    nav#botoes-menu-principal a:link{
+        text-align: center;
+        float: left;
+        border-radius:30px;
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+
+    /* PARTE PRINCIPAL */
+    main{
+        clear: both;
+    }
+
+    .principal{
+        width: 50%;
+        float: left;
+    }
+
+    /* Imagens do site */
+    .imagem{
+        width: 40%;
+    }
+
+
+
+    /* SEGUNDO CONTAINER */
+    .segundo-container{
+        width: 20%;
+        float: right;
+    }
+
+    /* TERCEIRO CONTAINER  */
+    .terceiro-container{
+        margin-top: 0px;
+        margin-left: 150px;
+        width: 15px;
+        float: left;
+    }
+    
+
+    footer{
+        clear: both;
+    }
+
+
+
+}
+
